@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - AI & ML Aspirant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">Aishwar's Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Your AI and ML Aspirant, showcasing innovation and creativity.</p>
+            <a href="#contact" class="cta-button">Contact Me</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I'm Aishwar, an AI and ML enthusiast with a passion for technology and innovation. I aim to leverage machine learning and data science to create impactful solutions for real-world challenges.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skill-set">
+                <div class="skill">Python</div>
+                <div class="skill">Machine Learning</div>
+                <div class="skill">Deep Learning</div>
+                <div class="skill">NLP</div>
+                <div class="skill">Flask</div>
+                <div class="skill">SQL</div>
+                <div class="skill">Power BI</div>
+                <div class="skill">HTML & CSS</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-list">
+                <div class="project">
+                    <h3>Face Melody Intelligent System</h3>
+                    <p>Analyzes facial emotions and suggests music based on mood.</p>
+                </div>
+                <div class="project">
+                    <h3>Global Pandemic Data Visualization</h3>
+                    <p>Interactive dashboard for pandemic data insights and predictions.</p>
+                </div>
+                <div class="project">
+                    <h3>License Plate Detection</h3>
+                    <p>YOLOv5-based model for recognizing and extracting vehicle license plates.</p>
+                </div>
+                <div class="project">
+                    <h3>Fire and Smoke Detection</h3>
+                    <p>Custom YOLOv5 model and Flask app for fire and smoke recognition.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>If you're interested in my work or have opportunities to collaborate, feel free to reach out!</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Aishwar. All rights reserved.</p>
+    </footer>
+</body>
+</html>
