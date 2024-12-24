@@ -6,6 +6,48 @@
     <title>Portfolio - AI & ML Aspirant</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background: linear-gradient(to bottom, #f8f1e7, #e6dcd2);
+            color: #333;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .about img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        .projects .project img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        .hero {
+            text-align: center;
+            background: #f4e7d3 url('https://via.placeholder.com/1920x400') no-repeat center center/cover;
+            color: #444;
+            padding: 50px 20px;
+        }
+        .header, .footer {
+            background-color: #8b6b42;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+    </style>
 </head>
 <body>
     <header class="header">
@@ -31,6 +73,7 @@
     <section id="about" class="about">
         <div class="container">
             <h2>About Me</h2>
+            <img src="https://via.placeholder.com/150" alt="Aishwar's Photo">
             <p>Hello! I'm Aishwar, an AI and ML enthusiast with a passion for technology and innovation. I aim to leverage machine learning and data science to create impactful solutions for real-world challenges.</p>
         </div>
     </section>
@@ -57,18 +100,22 @@
             <div class="project-list">
                 <div class="project">
                     <h3>Face Melody Intelligent System</h3>
+                    <img src="{{ url_for('static', filename='images/melody.jpg') }}" alt="Fire Image">
                     <p>Analyzes facial emotions and suggests music based on mood.</p>
                 </div>
                 <div class="project">
                     <h3>Global Pandemic Data Visualization</h3>
+                    <img src="{{ url_for('static', filename='images/global.jpg') }}" alt="Fire Image">
                     <p>Interactive dashboard for pandemic data insights and predictions.</p>
                 </div>
                 <div class="project">
                     <h3>License Plate Detection</h3>
+                    <img src="{{ url_for('static', filename='images/Global.jpg') }}" alt="Fire Image">
                     <p>YOLOv5-based model for recognizing and extracting vehicle license plates.</p>
                 </div>
                 <div class="project">
                     <h3>Fire and Smoke Detection</h3>
+                    <img src="{{ url_for('static', filename='images/fire.jpg') }}" alt="Fire Image">
                     <p>Custom YOLOv5 model and Flask app for fire and smoke recognition.</p>
                 </div>
             </div>
